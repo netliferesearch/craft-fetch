@@ -7,7 +7,7 @@ class CraftFetchPlugin extends BasePlugin
 	private $_developer = 'Knut Melvær';
 	private $_developerUrl = 'http://netliferesearch.com/knut';
 	private $_version = '1.0';
-  private $_description = 'Relays file_get_contents and outputs the raw data';
+	private $_description = 'Relays file_get_contents and outputs the raw data';
 
 	public function getName()
 	{
@@ -18,10 +18,10 @@ class CraftFetchPlugin extends BasePlugin
 	{
 		return $this->_version;
 	}
-  public function getDescription()
-  {
-    return $this->_description;
-  }
+	public function getDescription()
+	{
+		return $this->_description;
+	}
 
 	public function getDeveloper()
 	{
@@ -33,9 +33,9 @@ class CraftFetchPlugin extends BasePlugin
 		return $this->_developerUrl;
 	}
 
-  public function addTwigExtension()
-  {
-      Craft::import('plugins.craftfetch.twigextensions.CraftFetchTwigExtension');
-      return new CraftFetchTwigExtension();
-  }
+	public function addTwigExtension()
+	{
+			Craft::import('plugins.craftfetch.twigextensions.CraftFetchTwigExtension');
+			return new CraftFetchTwigExtension();
+	}
 }
